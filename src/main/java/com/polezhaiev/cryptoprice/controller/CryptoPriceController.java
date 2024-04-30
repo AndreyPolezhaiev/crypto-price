@@ -21,15 +21,7 @@ public class CryptoPriceController {
         if (symbol != null && !symbol.isEmpty()) {
             apiUrl += "?symbol=" + symbol;
         } else {
-            return new CryptoDataResponseDto()
-                    .setIndexPrice(null)
-                    .setMarkPrice(null)
-                    .setEstimatedSettlePrice(null)
-                    .setTime(null)
-                    .setSymbol(null)
-                    .setLastFundingRate(null)
-                    .setNextFundingTime(null)
-                    .setInterestRate(null);
+            return null;
         }
 
         RestTemplate restTemplate = new RestTemplate();
