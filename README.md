@@ -1,0 +1,1 @@
+This app allows to get price of specific cryptocurrency.
